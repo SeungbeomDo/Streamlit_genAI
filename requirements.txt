@@ -1,0 +1,13 @@
+numpy==1.24.3
+pandas==1.5.3
+spyder==5.4.3
+streamlit==1.22.0
+st-pages==0.4.1
+plotly==5.15.0
+xlwings==0.30.8
+openpyxl==3.1.2
+pdf2image==1.16.3
+matplotlib==3.7.1 
+wordcloud==1.9.2
+soynlp==0.0.493
+kiwipiepy==0.15.1
