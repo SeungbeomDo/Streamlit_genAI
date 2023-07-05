@@ -53,7 +53,7 @@ with st.container():
 
     st.markdown("---")
 
-    custom_subheader('생성형 AI에 의한 직무별 인력 변화 전망 (전자 DX/DS 통합; 대직무별)')
+    custom_subheader('생성형 AI에 의한 직무별 인력 변화 전망')
 
     select_positions = st.multiselect('조회할 직무를 선택하세요',
                                     df['직무'].to_list())
