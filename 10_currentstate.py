@@ -54,8 +54,6 @@ st.subheader("생성형 AI가 일자리를 대체할 것이라는 언론 보도 
 
 with st.container():
 
-    st.markdown("---")
-
     custom_subheader("뉴스 기사 수 (Key word : 생성형 AI & 일자리)")
 
     select_date_start = st.date_input('조회를 시작할 날짜를 선택하세요', datetime.date(2020,1,1))
