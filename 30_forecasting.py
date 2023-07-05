@@ -41,7 +41,7 @@ def custom_subheader(text):
     st.markdown(f"<div class='custom-subheader'>{text}</div>", unsafe_allow_html=True)
 
 #직무별 대체 전망 데이터: 대직무별
-df = pd.read_csv('https://github.com/SeungbeomDo/Streamlit_genAI/blob/main/df_baepo.csv', encoding = 'cp949')
+df = pd.read_csv('https://github.com/SeungbeomDo/Streamlit_genAI/raw/main/df_baepo.csv', encoding = 'cp949')
 
 #직무별 인력 변화 전망: 대직무 수준
 with st.container():
