@@ -34,7 +34,6 @@ st.set_page_config(
 )
 
 st.title("생성형 AI와 인력구조 변화 예측")
-st.write("삼성글로벌리서치 인재경영연구실")
 
 st.markdown('---')
 st.subheader("요약")
