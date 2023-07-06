@@ -59,8 +59,17 @@ with st.container():
     select_positions = st.multiselect('조회할 직무들을 선택하세요',
                                     df_temp['직무'].to_list())
     
-    selected_scenario = st.selectbox('적용할 시나리오를 선택하세요',
-                                     ['1번 시나리오', '2번 시나리오', '3번 시나리오'])
+    select_positions = st.multiselect('조회할 직무들을 선택하세요',
+                                    df_temp['직무'].to_list())
+    
+    selected_scenario1 = st.selectbox('직급에 부여할 가중치를 선택하세요: 직급이 높을수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
+
+    selected_scenario2 = st.selectbox('연봉에 부여할 가중치를 선택하세요: 연봉이 높을수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
+    
+    selected_scenario3 = st.selectbox('업무 특성에 부여할 가중치를 선택하세요: 단순반복성 업무일수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
 
     selected_df_temp = df_temp[df_temp['직무'].isin(select_positions)]
     st.session_state['selected_df_temp'] = selected_df_temp
@@ -84,8 +93,14 @@ with st.container():
     select_positions = st.multiselect('조회할 직무를 선택하세요',
                                     df['직무'].to_list())
     
-    selected_scenario = st.selectbox('원하는 시나리오를 선택하세요',
-                                    ['1번 시나리오', '2번 시나리오', '3번 시나리오'])
+    selected_scenario1 = st.selectbox('직급에 적용할 가중치를 선택하세요: 직급이 높을수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
+
+    selected_scenario2 = st.selectbox('연봉에 적용할 가중치를 선택하세요: 연봉이 높을수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
+    
+    selected_scenario3 = st.selectbox('업무 특성에 적용할 가중치를 선택하세요: 단순반복성 업무일수록 더 많이 대체될까?',
+                                     ['20%', '40%', '60%', '80%'])
 
     selected_df = df[df['직무'].isin(select_positions)]
     st.session_state['selected_df'] = selected_df
