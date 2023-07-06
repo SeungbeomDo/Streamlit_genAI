@@ -59,9 +59,6 @@ with st.container():
     select_positions = st.multiselect('조회할 직무들을 선택하세요',
                                     df_temp['직무'].to_list())
     
-    select_positions = st.multiselect('조회할 직무들을 선택하세요',
-                                    df_temp['직무'].to_list())
-    
     selected_scenario1 = st.selectbox('직급에 부여할 가중치를 선택하세요: 직급이 높을수록 더 많이 대체될까?',
                                      ['20%', '40%', '60%', '80%'])
 
