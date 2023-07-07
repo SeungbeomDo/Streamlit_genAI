@@ -19,10 +19,10 @@ import streamlit as st
 from st_pages import Page, show_pages
 
 show_pages(
-    [Page("Codes/dashboard.py", "0. Main"), 
-     Page("Codes/10_literature.py", "1. 문헌 데이터베이스"), 
-     Page("Codes/20_simulation.py", "2. 직무별 대체 시뮬레이션"),
-     Page("Codes/99_exam.py", "9. 연습용 페이지") 
+    [Page("dashboard.py", "0. Main"), 
+     Page("10_literature.py", "1. 문헌 데이터베이스"), 
+     Page("20_simulation.py", "2. 직무별 대체 시뮬레이션"),
+     Page("99_exam.py", "9. 연습용 페이지") 
     ]
     )
 
