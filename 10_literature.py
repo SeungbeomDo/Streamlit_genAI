@@ -83,11 +83,3 @@ with st.container():
 
 st.subheader("2) 생성형 AI 및 일자리 이슈에 관련된 논문 데이터 베이스 (2022.06~2023.06)")
 
-
-
-wb = xw.Book('P:/2023_생성형 AI와 인력구조 변화 예측/5. 데이터/뉴스기사목록_인공지능_일자리.xlsx')
-sheet = wb.sheets('sheet')
-values = sheet.range('A1').value
-values
-
-rows = sheet['A2:A18'].value
